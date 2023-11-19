@@ -9,7 +9,7 @@ from .utils import all_html_dirs, models
 def hexagonal_bipyramidal():
 
     st.header("hexagonal_bipyramidal")
-    HtmlFile = open(all_html_dirs['hexagonal_bipyramidal'], 'r', encoding='utf-8')
+    HtmlFile = open(all_html_dirs['hexagonal bipyramidal'], 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     components.html(source_code, height=600)
     st.header("Make Prediction")
@@ -19,5 +19,5 @@ def hexagonal_bipyramidal():
     vals = [density, composition, hexagonal_bipyramidal_val]
     pred = ""
     if None not in vals:
-        pred = models['hexagonal_bipyramidal'][1].predict([vals])[0]
+        pred = models['hexagonal bipyramidal'][1].predict([vals])[0]
     st.write(f"Energy: {pred}")
