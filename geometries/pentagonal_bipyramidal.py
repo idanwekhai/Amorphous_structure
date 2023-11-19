@@ -8,7 +8,7 @@ from .utils import all_html_dirs, models
 
 def pentagonal_bipyramidal():
 
-    st.header("Pentagonal_bipyramidal")
+    st.header("Pentagonal bipyramidal")
     HtmlFile = open(all_html_dirs['pentagonal bipyramidal'], 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     components.html(source_code, height=600)
