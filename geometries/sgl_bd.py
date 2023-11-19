@@ -10,6 +10,7 @@ from .utils import all_html_dirs, models
 def sgl_bd():
 
     st.header("Single Bond")
+    print(all_html_dirs)
     HtmlFile = open(all_html_dirs['sgl_bd'], 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     components.html(source_code, height=600)
