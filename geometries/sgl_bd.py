@@ -11,9 +11,9 @@ def sgl_bd():
 
     st.header("Single Bond")
     print(all_html_dirs)
-    HtmlFile = open(all_html_dirs['sgl_bd'], 'r', encoding='utf-8')
-    source_code = HtmlFile.read() 
-    components.html(source_code, height=600)
+    # HtmlFile = open(all_html_dirs['sgl_bd'], 'r', encoding='utf-8')
+    # source_code = HtmlFile.read() 
+    # components.html(source_code, height=600)
     st.header("Make Prediction")
     density =  st.number_input("Density Value", key=1, value=None, placeholder="density (g cm^-3)")
     composition =  st.number_input("Composition Value", key=2, value=None, placeholder="Composition")
