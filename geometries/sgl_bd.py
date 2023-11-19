@@ -21,5 +21,6 @@ def sgl_bd():
     pred = ""
     if None not in vals:
         # pred = models['sgl_bd'][1].predict([vals])[0]
+        pass
     st.write(f"Energy: {pred}")
     # st.button("Predict", type="primary", on_click=st.write(f"Energy: {pred}"))
