@@ -12,5 +12,7 @@ for file in all_htmls:
     text = pattern.search(file).group(1)
     all_html_dirs[text] = file
 
+print(all_html_dirs)
+
 with open('geo_models_metrics.pickle', 'rb') as fi:
     models = pickle.load(fi)
