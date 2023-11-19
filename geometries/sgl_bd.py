@@ -20,6 +20,6 @@ def sgl_bd():
     vals = [density, composition, single_bond_val]
     pred = ""
     if None not in vals:
-        pred = models['sgl_bd'][1].predict([vals])[0]
+        # pred = models['sgl_bd'][1].predict([vals])[0]
     st.write(f"Energy: {pred}")
     # st.button("Predict", type="primary", on_click=st.write(f"Energy: {pred}"))
